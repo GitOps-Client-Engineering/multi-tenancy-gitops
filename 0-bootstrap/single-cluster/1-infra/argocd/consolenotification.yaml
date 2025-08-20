@@ -18,15 +18,15 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
+    repoURL: https://github.com/GitOps-Client-Engineering/multi-tenancy-gitops.git
     path: consolenotification
     helm:
       values: |
         ocp-console-notification:
           ## The name of the ConsoleNotification resource in the cluster
           name: "banner-env"
-
           ## The background color that should be used for the banner
-          backgroundColor: blue
+          backgroundColor: "#0065CC"
           ## The color of the text that will appear in the banner
           color: "'#fff'"
           ## The location of the banner. Options: BannerTop, BannerBottom, BannerTopBottom
