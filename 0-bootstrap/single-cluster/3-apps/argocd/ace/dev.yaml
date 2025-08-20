@@ -14,7 +14,6 @@ spec:
     server: https://kubernetes.default.svc
   project: applications
   source:
-    repoURL: https://github.com/GitOps-Client-Engineering/multi-tenancy-gitops.git
     path: ace/config/argocd/dev
   syncPolicy:
     automated:
