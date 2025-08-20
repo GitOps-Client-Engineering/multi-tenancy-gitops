@@ -1,5 +1,5 @@
-resources:
-#- argocd/ace/cicd.yaml
+resources: #- argocd/ace/cicd.yaml
+
 #- argocd/ace/dev.yaml
 #- argocd/ace/stage.yaml
 #- argocd/ace/prod.yaml
@@ -36,7 +36,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/CE-Demo/multi-tenancy-gitops-apps.git
+      value: https://github.com/GitOps-Client-Engineering/multi-tenancy-gitops-apps.git
     - op: add
       path: /spec/source/targetRevision
       value: master
