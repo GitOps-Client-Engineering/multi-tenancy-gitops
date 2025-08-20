@@ -9,7 +9,7 @@ metadata:
     gitops.tier.layer: services
     gitops.tier.source: git
   finalizers:
-  - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: openshift-operators
