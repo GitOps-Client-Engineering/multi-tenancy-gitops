@@ -1,11 +1,10 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: openshift-gitops-operator
+  name: cert-manager-operator
   namespace: openshift-operators
 spec:
-  channel: latest
-  installPlanApproval: Automatic
-  name: openshift-gitops-operator
+  channel: stable-v1
+  name: cert-manager-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
