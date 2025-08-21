@@ -74,10 +74,17 @@ spec:
                 updateStrategy:
                   registryPoll:
                     interval: 45m
+            platformnavigator:
+              name: ibm-platform-navigator-catalog
+              catalog:
+                displayName: IBM Platform Navigator Catalog
+                publisher: IBM
+                sourceType: grpc
+                image: icr.io/cpopen/platform-navigator-catalog:latest
+                updateStrategy:
+                  registryPoll:
+                    interval: 45m
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-  
-  
-  
